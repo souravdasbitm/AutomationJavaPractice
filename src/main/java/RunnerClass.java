@@ -18,11 +18,9 @@ public class RunnerClass {
         child.useOfParentMethod(8, 9);
 
         child.parentChildOverrideMethod();
-        // input --> a= 7 , b = 8
-        // output --> a=8 , b =7
 
-        // Implementation : It needs to be done without using any third variable
+        StudentConstructor stuc= new StudentConstructor("Vinod",1);
 
-
+        stuc.display();
     }
 }
