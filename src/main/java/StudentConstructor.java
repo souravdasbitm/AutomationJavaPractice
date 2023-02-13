@@ -7,7 +7,7 @@ public class StudentConstructor {
         this.id = id;
     }
 
-    public void display(){
-        System.out.println("ID: "+id+" Name: "+name);
+    public void display() {
+        System.out.println("ID: " + id + " Name: " + name);
     }
 }

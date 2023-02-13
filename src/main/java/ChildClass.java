@@ -9,11 +9,11 @@ public class ChildClass extends ParentClass {
         System.out.println("This is child method which will override the parent method");
     }
 
-    public void useOfParentMethod(int i,int j){
-      super.minus(i,j);
+    public void useOfParentMethod(int i, int j) {
+        super.minus(i, j);
     }
 
-    public  void parentChildOverrideMethod(){
+    public void parentChildOverrideMethod() {
         overriddenMethod();
         super.overriddenMethod();
     }
