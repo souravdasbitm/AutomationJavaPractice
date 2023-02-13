@@ -1,6 +1,5 @@
 public class ChildClass extends ParentClass {
 
-    ParentClass p = new ParentClass();
     public void multiple(int i, int j) {
         System.out.println("This is the child method multiple of i and j ---> " + (i * j));
     }
@@ -11,6 +10,11 @@ public class ChildClass extends ParentClass {
     }
 
     public void useOfParentMethod(int i,int j){
-      p.minus(i,j);
+      super.minus(i,j);
+    }
+
+    public  void parentChildOverrideMethod(){
+        overriddenMethod();
+        super.overriddenMethod();
     }
 }
