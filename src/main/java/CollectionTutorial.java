@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class CollectionTutorial {
     public static void main(String[] args) {
@@ -50,8 +47,28 @@ public class CollectionTutorial {
             System.out.println("Key: "+e.getKey()+" Value: "+e.getValue());
         }
 
-
         //TreeSet
+
+        TreeSet<String> treeSet = new TreeSet<String>();
+
+//        SortedSet<String> treeSet = new TreeSet<String>();
+//        Set<String> treeSet = new TreeSet<>();
+
+        treeSet.add("d");
+        treeSet.add("e");
+        treeSet.add("g");
+        treeSet.add("f");
+        treeSet.add("a");
+        treeSet.add("b");
+
+        System.out.println(treeSet);
+
+      Iterator<String> itr = treeSet.iterator();
+
+       // Iterator<String> itr = treeSet.descendingIterator();
+        while (itr.hasNext()){
+            System.out.println(itr.next());
+        }
 
         // Find out the duplicate value count using Map
     }
