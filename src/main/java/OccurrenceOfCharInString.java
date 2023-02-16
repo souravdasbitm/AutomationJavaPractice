@@ -1,13 +1,13 @@
 // Java program to count frequencies of
 // characters in string using Hashmap
+
 import java.util.*;
+
 class OccurrenceOfCharInString {
-    static void characterCount(String inputString)
-    {
+    static void characterCount(String inputString) {
         // Creating a HashMap containing char
         // as a key and occurrences as a value
-        HashMap<Character, Integer> charCountMap
-                = new HashMap<Character, Integer>();
+        HashMap<Character, Integer> charCountMap = new HashMap<>();
 
         // Converting given string to char array
 
@@ -20,8 +20,7 @@ class OccurrenceOfCharInString {
                 // If char is present in charCountMap,
                 // incrementing it's count by 1
                 charCountMap.put(c, charCountMap.get(c) + 1);
-            }
-            else {
+            } else {
 
                 // If char is not present in charCountMap,
                 // putting this char to charCountMap with 1 as it's value
@@ -36,9 +35,8 @@ class OccurrenceOfCharInString {
     }
 
     // Driver Code
-    public static void main(String[] args)
-    {
-        String str = "GeeksForGeeks";
+    public static void main(String[] args) {
+        String str = "souravdas";
         characterCount(str);
     }
 }
